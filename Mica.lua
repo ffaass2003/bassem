@@ -1,8 +1,8 @@
 ------------------------------------------------
--- This Source Was Developed By (Mica) @kidcrl.--
---   This Is The Source Channel @kidcrl .   --
+-- This Source Was Developed By (Mica) @J_B_4.--
+--   This Is The Source Channel @J_B_4 .   --
 --                - 𝗦𝗼𝘂𝗿𝗰𝗲 Mica-                 --
---        -- https://t.me/kidcrl --         --
+--        -- https://t.me/J_B_4 --         --
 ------------------------------------------------ 
 URL     = require("./libs/url")
 JSON    = require("./libs/dkjson")
@@ -117,7 +117,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,2107933548}  
+local ListSudos ={Sudo_Id,5268667956}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -128,9 +128,9 @@ end
 function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersQ = Redis:sismember(TheMica.."Mica:DevelopersQ:Groups",UserId) 
-if UserId == 2107933548 then
+if UserId == 5268667956 then
 Status = true
-elseif UserId == 2107933548 then
+elseif UserId == 5268667956 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -154,10 +154,10 @@ Managers = Redis:sismember(TheMica.."Mica:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheMica.."Mica:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheMica.."Mica:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2107933548 then
-Status = 'مبرمج السورس'
-elseif UserId == 2107933548 then
-Status = 'مطور السورس'
+if UserId == 5268667956 then
+Status = 'مبرمج الالسورس '
+elseif UserId == 5268667956 then
+Status = 'مطور الالسورس '
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == TheMica then
@@ -734,9 +734,9 @@ Managers = Redis:sismember(TheMica.."Mica:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheMica.."Mica:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheMica.."Mica:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2107933548 then
+if UserId == 5268667956 then
 Status = true
-elseif UserId == 2107933548 then
+elseif UserId == 5268667956 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -773,9 +773,9 @@ Managers = Redis:sismember(TheMica.."Mica:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheMica.."Mica:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheMica.."Mica:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 2107933548 then
+if UserId == 5268667956 then
 Status = true
-elseif UserId == 2107933548 then
+elseif UserId == 5268667956 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -901,10 +901,10 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 2107933548 then
+if tonumber(msg.sender.user_id) == 5268667956 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 2107933548 then
+elseif tonumber(msg.sender.user_id) == 5268667956 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -2318,7 +2318,7 @@ else
 return LuaTele.sendText(msg_chat_id,msg_id,"\n⌔︰لا توجد قناة في الاشتراك ارسل تغيير الاشتراك الاجباري","md",true)  
 end
 end
-if text == 'تحديث السورس' or text == 'تحديث السورس ⌔' then
+if text == 'تحديث الالسورس ' or text == 'تحديث السورس ⌔' then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︰هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
@@ -2496,7 +2496,7 @@ end
 end   
 Get_Json = Get_Json..'],'
 end
-Get_Json = Get_Json..'"Dev":"kidcrl"}'
+Get_Json = Get_Json..'"Dev":"J_B_4"}'
 end
 Get_Json = Get_Json..'}}'
 local File = io.open('./'..UserBot..'.json', "w")
@@ -4487,7 +4487,7 @@ if TextMsg == 'جمالي' then
 Redis:set(TheMica.."Mica:Status:gamle"..msg_chat_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"⌔︰ تم تفعيل جمالي ","md",true)
 end
-if TextMsg == 'ردود السورس' then
+if TextMsg == 'ردود الالسورس ' then
 Redis:set(TheMica.."Mica:Sasa:Jeka"..msg_chat_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*⌔︰ تم تفعيل ردود السورس *","md",true)
 end
@@ -4962,7 +4962,7 @@ if TextMsg == 'جمالي' then
 Redis:del(TheMica.."Mica:Status:gamle"..msg_chat_id) 
 return LuaTele.sendText(msg_chat_id,msg_id,"⌔︰ تم تعطيل جمالي ","md",true)
 end
-if TextMsg == 'ردود السورس' then
+if TextMsg == 'ردود الالسورس ' then
 Redis:del(TheMica.."Mica:Sasa:Jeka"..msg_chat_id) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*⌔︰ تم تعطيل ردود السورس *","md",true)
 end
@@ -5077,13 +5077,13 @@ end
 if Controller(msg_chat_id,UserId_Info.id) == 'المطور الثانوي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,UserId_Info.id).." 』*","md",true)  
 end
-if Controller(msg_chat_id,UserId_Info.id) == 'مبرمج السورس' then
+if Controller(msg_chat_id,UserId_Info.id) == 'مبرمج الالسورس ' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,UserId_Info.id).." 』*","md",true)  
 end
-if Controller(msg_chat_id,UserId_Info.id) == 'مبرمج السورس' then
+if Controller(msg_chat_id,UserId_Info.id) == 'مبرمج الالسورس ' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,UserId_Info.id).." 』*","md",true)  
 end
-if Controller(msg_chat_id,UserId_Info.id) == 'مطور السورس' then
+if Controller(msg_chat_id,UserId_Info.id) == 'مطور الالسورس ' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,UserId_Info.id).." 』*","md",true)  
 end
 if Redis:sismember(TheMica.."Mica:ktmAll:Groups",UserId_Info.id) then
@@ -5590,13 +5590,13 @@ end
 if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'المطور الثانوي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,Message_Reply.sender.user_id).." 』*","md",true)  
 end
-if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'مبرمج السورس' then
+if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'مبرمج الالسورس ' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,Message_Reply.sender.user_id).." 』*","md",true)  
 end
-if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'مبرمج السورس' then
+if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'مبرمج الالسورس ' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,Message_Reply.sender.user_id).." 』*","md",true)  
 end
-if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'مطور السورس' then
+if Controller(msg_chat_id,Message_Reply.sender.user_id) == 'مطور الالسورس ' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︰ عذرا لا تستطيع كتم عام『 "..Controller(msg_chat_id,Message_Reply.sender.user_id).." 』*","md",true)  
 end
 if Redis:sismember(TheMica.."Mica:ktmAll:Groups",Message_Reply.sender.user_id) then
@@ -9774,8 +9774,8 @@ end
 Redis:del(TheMica..'Mica:Texting:DevTheMica')
 return LuaTele.sendText(msg_chat_id,msg_id,'⌔︰ تم حذف كليشه المطور')
 end
-if text == 'مبرمج سورس' or text == 'مبرمج السورس' or text == 'المبرمج' then  
-local UserId_Info = LuaTele.searchPublicChat("kidcrl")
+if text == 'مبرمج السورس ' or text == 'مبرمج الالسورس ' or text == 'المبرمج' then  
+local UserId_Info = LuaTele.searchPublicChat("J_B_4")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
@@ -9800,7 +9800,7 @@ local TestText = "- معلومات مبرمج السورس : \\nn: name Dev . ["
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/kidcrl"}
+{text = '❲ 𝖼𝗈𝖽𝖾𝗋 ❳', url = "https://t.me/J_B_4"}
 },
 {
 {text = '٬ 𝐴𝐿_𝐽𝑈𝐵𝑂𝑈𝑅𝐼 🕷 ٫', url = "https://t.me/co_st1"},
@@ -9909,7 +9909,7 @@ local m = "https://t.me/wffhvv/"..Rrr..""
 local rep = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id="..msg_chat_id.."&caption="..URL.escape(t).."&photo="..m.."&reply_to_message_id="..rep.."&parse_mode=Markdown")
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+if text == 'الالسورس ' or text == 'السورس ' or text == 'يا السورس ' or text == 'source' then
 video = "https://t.me/S22SS2/27"
 local T =[[
 Welcome to  Source : [𝐴𝐿_𝐽𝑈𝐵𝑂𝑈𝑅𝐼 𝑆𝑂𝑈𝑅𝑆𝐸](https://t.me/co_st1)
@@ -9917,7 +9917,7 @@ Welcome to  Source : [𝐴𝐿_𝐽𝑈𝐵𝑂𝑈𝑅𝐼 𝑆𝑂𝑈𝑅𝑆
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝗂𝗇𝗍𝖾𝗋𝗇𝖺𝗍𝗂𝗈𝗇𝖺𝗅 𝗉𝗋𝗈𝗀𝗋𝖺𝗆𝗆𝖾𝗋 †', url = "https://t.me/kidcrl"},{text = '𝗌𝗈𝗎𝗋𝖼𝖾 †', url = "https://t.me/MEGGAS"}
+{text = '𝗂𝗇𝗍𝖾𝗋𝗇𝖺𝗍𝗂𝗈𝗇𝖺𝗅 𝗉𝗋𝗈𝗀𝗋𝖺𝗆𝗆𝖾𝗋 †', url = "https://t.me/J_B_4"},{text = '𝗌𝗈𝗎𝗋𝖼𝖾 †', url = "https://t.me/MEGGAS"}
 },
 {
 {text = 'ُ𝗍𝗐𝗌 †', url = "https://t.me/youdream"}
@@ -11135,7 +11135,7 @@ name = string.gsub(name,"🧝‍♂","🧝‍♀🧝‍♀🧝‍♀🧝‍♀�
 name = string.gsub(name,"🙍‍♂️","🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙍‍♂️🙎‍♂️🙎‍♂️🙎‍♂️")
 name = string.gsub(name,"🧖‍♂️","🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♂️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️")
 name = string.gsub(name,"👬","👭👭👭👭👭👬👭👭👭")
-name = string.gsub(name,"👨‍👨‍👧","👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦")
+name = string.gsub(name,"👨‍👨‍👧","👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦??‍👨‍👦")
 name = string.gsub(name,"🕒","??🕒🕒🕒🕒🕒🕓🕒🕒🕒")
 name = string.gsub(name,"🕤","🕥🕥🕥🕥🕥🕤🕥🕥🕥")
 name = string.gsub(name,"⌛️","⏳⏳⏳⏳⏳⏳⌛️⏳⏳")
@@ -11315,7 +11315,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '⌔ السورس .', url = 't.me/co_st1'},{text = '⌔ لتنصيب بوت .', url = 't.me/kidcrl'}, 
+{text = '⌔ السورس .', url = 't.me/co_st1'},{text = '⌔ لتنصيب بوت .', url = 't.me/J_B_4'}, 
 },
 {
 {text = '⌔ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -11328,7 +11328,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '⌔ السورس .', url = 't.me/co_st1'},{text = '⌔ لتنصيب بوت .', url = 't.me/kidcrl'}, 
+{text = '⌔ السورس .', url = 't.me/co_st1'},{text = '⌔ لتنصيب بوت .', url = 't.me/J_B_4'}, 
 },
 {
 {text = '⌔ اضفني في مجموعتك .', url = 't.me/'..UserBot..'?startgroup=new'}, 
@@ -11486,7 +11486,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︰هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheMica..'Mica:Channel:Join')}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂??𝖾 † ٫ ', url = 't.me/'..Redis:get(TheMica..'Mica:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n عزيزي اشترك في القناة 🦎.*',"md",false, false, false, false, reply_markup)
 end
 Redis:del(TheMica.."Mica:Start:Bot") 
